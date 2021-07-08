@@ -9,7 +9,7 @@ Also, this file calls the code `non_maximum_suppression.py`
 
 `hand_tracker_MediaPipeModels.py` creates a class called HandTracker, which is able to detect ONE hand.
 
-The models can be found [in this folder](/resources/vision/hand_tracking/models). We use the following models:
+The models can be found [in this folder](/models). We use the following models:
 - hand_landmark_3d.tflite OR hand_landmark.tflite
 - palm_detection_without_custom_op.tflite
 - anchors.csv

@@ -1,8 +1,4 @@
-# Vision HandLandmark
-
-In this document, the files of HandLandmark, of the category `Vision`, are described.
-
-## Hand detection & Landmarks - Class generation
+# Hand detection & Landmarks - Class generation
 
 The file `hand_tracker_MediaPipeModels.py`, detects both the hand box and the hand landmarks by using models from MediaPipe (see MediaPipe [here](https://google.github.io/mediapipe) ).
 Also, this file calls the code `non_maximum_suppression.py`
@@ -14,11 +10,11 @@ The models can be found [in this folder](/models). We use the following models:
 - palm_detection_without_custom_op.tflite
 - anchors.csv
 
-This code works both with the 3D model and the 2D model, the changes applied can be seen in the functions:
+This code works both with the 3D model and the 2D model, the changes applied from the original code can be seen in the functions:
 - `predict_joints`
 - `call` (specifically in the last part of projecting keypoints)
                     
-## Hand detection & Landmarks - Video detection
+# Hand detection & Landmarks - Video detection
 
 Running the file `run_video_HandTracking.py`, one will be able to detect the hand and its landmarks in a video environment. As seen in the following picture:
 
